@@ -1,0 +1,10 @@
+{
+    "require": {
+        "yarfox/attributes-collector": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\": "./"
+        }
+    }
+}
