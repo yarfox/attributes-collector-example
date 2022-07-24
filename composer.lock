@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e1fd41eb5efe3844ae848b3bc06d655",
+    "content-hash": "6bc3321cf9094cc0213ebd208bdab667",
     "packages": [
         {
             "name": "php-parallel-lint/php-console-color",
@@ -122,16 +122,16 @@
         },
         {
             "name": "yarfox/attributes-collector",
-            "version": "1.1.1",
+            "version": "1.0.0-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yarfox/attributes-collector.git",
-                "reference": "6cad4e11115bd1db9d165fc0817eb79863e513bd"
+                "reference": "491e7eeb713170ab1710d6cd5086ce67e136e526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yarfox/attributes-collector/zipball/6cad4e11115bd1db9d165fc0817eb79863e513bd",
-                "reference": "6cad4e11115bd1db9d165fc0817eb79863e513bd",
+                "url": "https://api.github.com/repos/yarfox/attributes-collector/zipball/491e7eeb713170ab1710d6cd5086ce67e136e526",
+                "reference": "491e7eeb713170ab1710d6cd5086ce67e136e526",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -174,22 +174,22 @@
             ],
             "support": {
                 "issues": "https://github.com/yarfox/attributes-collector/issues",
-                "source": "https://github.com/yarfox/attributes-collector/tree/1.1.1"
+                "source": "https://github.com/yarfox/attributes-collector/tree/1.0.0-alpha"
             },
-            "time": "2022-07-23T03:06:27+00:00"
+            "time": "2022-07-23T12:02:29+00:00"
         },
         {
             "name": "yarfox/container",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yarfox/container.git",
-                "reference": "4fa10e4e05b81fecea216c791119b8e49ea5a363"
+                "reference": "f14705ccd60bc8c4963acff1b50fb4b5937cee9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yarfox/container/zipball/4fa10e4e05b81fecea216c791119b8e49ea5a363",
-                "reference": "4fa10e4e05b81fecea216c791119b8e49ea5a363",
+                "url": "https://api.github.com/repos/yarfox/container/zipball/f14705ccd60bc8c4963acff1b50fb4b5937cee9e",
+                "reference": "f14705ccd60bc8c4963acff1b50fb4b5937cee9e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -199,7 +199,8 @@
                 ]
             },
             "require": {
-                "psr/container": "^2.0"
+                "psr/container": "^2.0",
+                "yarfox/utils": "^0.1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
@@ -223,15 +224,66 @@
             "description": "psr-11 container",
             "support": {
                 "issues": "https://github.com/yarfox/container/issues",
-                "source": "https://github.com/yarfox/container/tree/1.0.1"
+                "source": "https://github.com/yarfox/container/tree/1.0.3"
             },
-            "time": "2022-07-18T03:19:29+00:00"
+            "time": "2022-07-23T10:35:48+00:00"
+        },
+        {
+            "name": "yarfox/utils",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yarfox/utils.git",
+                "reference": "1bc26bc747fc2d98ede4f895881558161c1466e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yarfox/utils/zipball/1bc26bc747fc2d98ede4f895881558161c1466e3",
+                "reference": "1bc26bc747fc2d98ede4f895881558161c1466e3",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yarfox\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "anhoder",
+                    "email": "anhoder@88.com"
+                }
+            ],
+            "description": "Utils of Yarfox.",
+            "support": {
+                "issues": "https://github.com/yarfox/utils/issues",
+                "source": "https://github.com/yarfox/utils/tree/0.1.0"
+            },
+            "time": "2022-07-23T09:22:06+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "alpha",
+    "stability-flags": {
+        "yarfox/attributes-collector": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
